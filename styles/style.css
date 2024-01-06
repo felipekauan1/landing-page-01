@@ -83,6 +83,34 @@ body>main>aside>form>input[type=submit] {
     cursor: pointer;
 }
 
-body>main>article {
+@media screen and (max-width: 1115px) {
+    body {
+        flex-direction: column;
+    }
     
+    body>header>nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body>main {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    body>main>article {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    body>header>nav>ul>a>li {
+        display: block;
+    }
+
+    body>main>aside>h2 {
+        line-height: 50px;
+        margin: 0;
+    }
 }
